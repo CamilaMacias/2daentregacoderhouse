@@ -13,65 +13,64 @@ font-family: 'Jost', sans-serif;
     padding: 0%;
     box-sizing: border-box;
 }
+
+$color1:blueviolet;
+$color2:indigo;
+
 .navbar{
     height: 80px;
-    background-color: blueviolet;
+    background-color: $color1;
+
+    brand img{
+        height: 55px;
+    }
     
 }
-.navbar-brand img{
-    height: 55px;
-}
 
-.nav-link{
+.nav{
+    link{
     color: aliceblue!important;
 }
-.nav-link:hover{
+link:hover{
     color: black;
+}
 }
 
 .d-flex button{
-background-color: indigo;
-border-radius: 10px;
+background-color: $color2;
+border-radius: 10px;}
 
-}
 .jumbotron{
     height: 500px;
     width: 100%;
     background-image: url(images/crowd-people-with-raised-arms-having-fun-music-festival-by-night\ \(1\).jpg);
     background-position: center;
     background-size: cover;
-    border: 4px solid blueviolet;
+    border: 4px solid $color1;
     justify-content: center;
     
     
-}
-.jumbotron h1{
-    color: blueviolet;
+    h1{
+    color: $color1;
     text-align: center;
-    border: 4px solid blueviolet;
+    border: 4px solid $color1;
     font-size: 60px;
     filter: brightness(50px);
     padding: 20px;
     
     }
+}
 
-    footer p{
-        text-align: center;
-        font-size: 25px;
-        color: gainsboro;
-
-    }
-
-    footer{
-    justify-content: center;
-    align-items: center;
-    background-color: indigo;
-        
-    }
-
-
-
-
+footer{
+justify-content: center;
+align-items: center;
+background-color: $color2;
+p{
+    text-align: center;
+    font-size: 25px;
+    color: gainsboro;
+}
+}
 
 @media only screen and (min-width:0) and (max-width:576px){
     .navbar-collapse{
@@ -83,7 +82,7 @@ border-radius: 10px;
 
 .jumbotron h1{
     font-size: 40px;
-    border: 2px solid blueviolet;
+    border: 2px solid $color1;
 }
 footer p{
     text-align: center;
@@ -124,7 +123,7 @@ h3{
     align-items: center;
 }
 .jumbotronart{
-    border: 4px solid blueviolet;
+    border: 4px solid $color1;
     
     justify-content: center;
     background-image: none;
@@ -153,7 +152,7 @@ h3{
 }
 
 form{
-    border: 2px solid blueviolet;
+    border: 2px solid $color1;
     width: fit-content;
     height: 42px
 }
@@ -163,8 +162,8 @@ form{
     display: block;
     font-size: 30px;
     width: fit-content;
-    border: 2px solid indigo;
-    background-color: indigo;
+    border: 2px solid $color2;
+    background-color: $color2;
     color: aliceblue;
     text-align: center;
     padding: 10px;
@@ -180,13 +179,14 @@ form{
     font-weight: bold;
 }
 
+
 @media only screen and (min-width:0) and (max-width:576px){
     .pflex{
         display: block;
         font-size: 20px;
         width: fit-content;
-        border: 2px solid indigo;
-        background-color: indigo;
+        border: 2px solid $color2;
+        background-color:$color2;
         color: aliceblue;
         text-align: center;
         padding: 5px;
@@ -198,7 +198,7 @@ h1{
     padding-bottom: 30px;
 }
 form{
-    border: 2px solid blueviolet;
+    border: 2px solid $color1;
     width: fit-content;
     height: 42px;
 }
@@ -218,8 +218,8 @@ footer p{
         display: block;
         font-size: 40px;
         width: fit-content;
-        border: 2px solid indigo;
-        background-color: indigo;
+        border: 2px solid $color2;
+        background-color: $color2;
         color: aliceblue;
         text-align: center;
         padding: 10px;
@@ -234,6 +234,8 @@ footer p{
 }
 
 }
+
+
 .contenedor{
     display: flex;
     border: 2px black solid;
@@ -244,12 +246,12 @@ footer p{
     justify-content: space-evenly;
     width: 250px;
     height: 450px;
-    background-color: blueviolet;
+    background-color: $color1;
     border-radius: 0%;
     border:  2px solid black;
 }
 .card_img{
-    background-color: indigo;
+    background-color: $color2;
     height: 200px;
     background-image: url(images/ca7riel2.png);
     background-size: cover;
@@ -261,7 +263,7 @@ footer p{
 .card_boton{
     text-decoration: none;
     color: aliceblue;
-    background-color:  indigo;
+    background-color:  $color2;
     text-align: center;
     display: block;
     padding: 10px;
@@ -272,10 +274,10 @@ footer p{
     justify-content: space-evenly;
     width: 250px;
     height: 450px;
-    background-color: blueviolet;
+    background-color: $color1;
 }
 .card_img2{
-    background-color: indigo;
+    background-color: $color2;
     background-image: url(images/pacoamoroso.png);
     height: 200px;
     background-size: cover;
@@ -287,7 +289,7 @@ footer p{
 .card_boton2{
     text-decoration: none;
     color: aliceblue;
-    background-color:  indigo;
+    background-color:  $color2;
     text-align: center;
     display: block;
     padding: 10px;
@@ -296,10 +298,10 @@ footer p{
     display: flex;
     width: 250px;
     height: 450px;
-    background-color: blueviolet;
+    background-color: $color1;
 }
 .card_img3{
-    background-color: indigo;
+    background-color: $color2;
     background-image: url(images/nafta.png);
     height: 200px;
     background-size: cover;
@@ -311,19 +313,20 @@ footer p{
 .card_boton3{
     text-decoration: none;
     color: aliceblue;
-    background-color: indigo;
+    background-color: $color2;
     text-align: center;
     display: block;
     padding: 10px;
 }
+
 .card{
     display: flex;
     width: 250px;
     height: 450px;
-    background-color: blueviolet;
+    background-color: $color1;
 }
 .card_img4{
-    background-color: indigo;
+    background-color: $color2;
     background-image: url(images/militantesdelclimax.png);
     height: 200px;
     background-size: cover;
@@ -335,7 +338,7 @@ footer p{
 .card_boton4{
     text-decoration: none;
     color: aliceblue;
-    background-color: indigo;
+    background-color: $color2;
     text-align: center;
     display: block;
     padding: 10px;
@@ -347,7 +350,7 @@ footer p{
     background-color: blueviolet;
 }
 .card_img5{
-    background-color: indigo;
+    background-color: $color2;
     background-image: url(images/zoegotusso.png);
     height: 200px;
     background-size: cover;
@@ -359,7 +362,7 @@ footer p{
 .card_boton5{
     text-decoration: none;
     color: aliceblue;
-    background-color: indigo;
+    background-color: $color2;
     text-align: center;
     display: block;
     padding: 10px;
@@ -371,7 +374,7 @@ footer p{
     background-color: blueviolet;
 }
 .card_img6{
-    background-color:  indigo;
+    background-color:  $color2;
     background-image: url(images/lolamembrillo.png);
     height: 200px;
     background-size: cover;
@@ -383,7 +386,7 @@ footer p{
 .card_boton6{
     text-decoration: none;
     color: aliceblue;
-    background-color:indigo;
+    background-color:$color2;
     text-align: center;
     display: block;
     padding: 10px;
@@ -543,6 +546,14 @@ color: black;
     background-size: cover;
 }
 
+.item9{
+    grid-column: 1/2;
+    grid-row: 3/4;
+    background-image: url(images/nafta.png);
+    background-position: center;
+    background-size: cover;
+}
+
 .pserv2{
     text-align: center;
     font-size: 30px;
@@ -551,4 +562,45 @@ color: black;
 .pserv2:hover{
     transform: scale(1.1);
     color: black;
+}
+
+@media only screen and (min-width:0) and (max-width:576px){
+    .item4{
+        grid-column: 1/3;
+        grid-row: 3/5;
+        background-image: url(images/zoegotusso.png);
+        background-position: center;
+        background-size: cover;
+    }
+    .item8{
+        grid-column: 1/3;
+        grid-row: 1/2;
+        background-image: url(images/militantesdelclimax.png);
+        background-position: center;
+        background-size: cover;
+    }
+    .item2{
+        grid-column: 1/3;
+        grid-row: 2/3;
+        background-image: url(images/albumca7riel.png);
+        background-position: center;
+        background-size: cover;
+    }
+    .item6{
+        grid-column: 3/5;
+        grid-row: 3/5;
+        background-image: url(images/crowd-people-with-raised-arms-having-fun-music-festival-by-night\ \(1\).jpg);
+        background-position: center;
+            background-size: cover;
+    }
+
+
+}
+
+input{
+    transition: all 2s;
+}
+input:focus{
+    font-size: 30px;
+    font-style: italic;
 }
